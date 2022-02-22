@@ -42,21 +42,19 @@ a:link{
     top: 3rem;
     right: 1rem;
     width: 300px;
-    height: 30vh;
+    height: 60vh;
     display: none;
     background-color: #2E2E2E;
     border-radius: 10px;
     color: #F5F5F5;
-    padding: 10px;
-   
+    padding-top: 1.5rem;
 }
 
 
 .header_container_menu li{
-    margin-top: 1rem;
     margin-bottom: 1rem;
     border-bottom: solid 1px #F5F5F5;
-    width: 280px;
+    width: 240px;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -82,7 +80,7 @@ p{
 }
 
 .container{
-    max-width: 320px;
+    min-width: 300px;
     margin: auto;
 
 }
@@ -97,19 +95,17 @@ p{
 }
 
 .card_product{
-    width: 300px;
+    min-width: 300px;
     height: 380px;
     border: solid 2px;
     border-color: #F5F5F5;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-       
-
 }
 
 .card_container ul{
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .desc_container{
@@ -168,20 +164,21 @@ img{
 }
 
 .card_carrinhoCompras{
+    margin-top: 1rem;
    display:none
 }
 
 #divBusca{
     position: absolute;
     top: 3rem;
-    right: 1rem;
+    right: 0px;
     width: 204px;
     border-radius: 5px;
 }
 
 #txtBusca{
     width: 150px;
-    height: 20px;
+    height: 35px;
     border: 1px solid #F5F5F5;
     box-sizing: border-box;
     background: #F5F5F5;
@@ -193,8 +190,164 @@ img{
     border-style: none;
     background: #6B54DE;
     width: 50px;
-    height: 20px;
+    height: 35px;
     border-radius: 5px;
     
 }
 
+@media (min-width: 450px) {
+
+    
+    .container{
+   
+        max-width: 1550px;
+
+    }
+
+    .card_container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 1550px;     
+    }
+
+    .card_product{
+        min-width: 300px;
+        min-height: 380px;
+        border-color: #F5F5F5;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #divBusca{
+        right: 1rem;
+ 
+    }
+}
+
+@media (min-width: 850px){
+    .header_container_menu{
+        font-size: 15px;
+        font-weight: bold;
+        width: 400px;
+        height: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        top: 0rem;
+        right: 0.5px;
+        background-color: #F5F5F5;
+        border-radius: 10px;
+        color:#828282;
+
+    }
+    
+    .header_container_menu li{
+        margin-bottom: 1rem;
+        border-bottom: 0px;
+        margin-left: 0.5px;
+        margin-right: 0px;
+    }
+    
+    .header_container_menuDot img{
+       display: none;
+    }
+
+    .header_container{
+        display: flex;
+    }
+   
+   
+
+}
+
+@media (min-width: 1550px) {
+
+    .container{
+        
+      
+        max-width: 1700px
+
+    }
+
+    .card_container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 1370px;     
+    }
+
+    .card_product{
+        max-width: 350px;
+        min-height: 380px;
+        border-color: #F5F5F5;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card_carrinhoCompras{
+       width: 13%;
+        height: 300px;
+        position: absolute;
+        top:5rem;
+        right: 3rem;
+        display:block;
+        text-align: center;
+        background-color: #F5F5F5;
+     }
+     
+    #desc_compras{
+        display: none;
+    }
+
+     #carrinhoTitle{
+        
+         margin-top: 5px;
+         height: 30px;
+     }
+
+     #carrinhoTitle h2{
+        font-size: 15px;
+        color: #F5F5F5;
+        background-color: #6B54DE;
+        padding: 10px;
+     }
+
+     .desc_carrinho{
+         margin-top: 5rem;
+     }
+
+     #vazio{
+         font-size: 22px;
+         font-weight: bold;
+     }
+
+     #addItens{
+        color: #828282;
+        font-size: 14px;
+    }
+
+    #divBusca{
+        right: 3rem;
+        width: 260px;
+ 
+    }    
+    #txtBusca{
+        width: 200px;
+        height: 35px;
+        border: 1px solid #F5F5F5;
+        box-sizing: border-box;
+        background: #F5F5F5;
+        border-radius: 5px;
+    }
+
+   
+
+    
+
+
+    
+}

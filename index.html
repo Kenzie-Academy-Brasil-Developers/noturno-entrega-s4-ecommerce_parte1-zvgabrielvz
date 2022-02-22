@@ -14,13 +14,13 @@
 
 <body>
     <header class="header_container" id="header">
-        <h1 id= "title">WearTake</h1>
+        <h1 id= "title">Gabriel Store</h1>
         <ul class="header_container_menu" id="menu">
-            <li>Todos</li>
+            <li id="topo">Todos</li>
             <li>Acesssórios</li>
             <li>Calçados</li>
             <li>Camisetas</li>   
-            <li>Carrinho de Compras</li>
+            <li id="desc_compras">Carrinho de Compras</li>
         </ul>
         <ul class="header_container_menuDot" id="menuDot">
             <li><img src="./src/cardapio.png" alt="" class="menu_button"></li>
@@ -52,35 +52,97 @@
                     </li>
                 </ul>
 
-            </li>            
-        </ul>
-        <ul class="card_carrinhoCompras">
-            <li>
-                <h2>Carrinho de Compras</h2>
-            </li>
-            <li>
-                <ul class="card_produto">
-                    <li></li>
-                    <ul>
-                        <div class="se_vazio">
-                            <li>Carrinho Vazio</li>
-                            <li>Adicione Itens</li>
-                        </div>
-                        <div class="com_itens">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </div>
-                    </ul>
-                    
-                </ul>
             </li>  
             <li>
-                <ul class="qtde_total">
-                    <li></li>
-                    <li></li>
+                <ul class="card_product">
+
+                    <li class="img_container">
+                        <img src="./src/boina.png" alt="">
+                    </li>
+                    <li class="desc_container">
+                        <span class="categoria">Acessórios</span>
+                        <h2 class="produto">Boina</h2>
+                        <p class="descricao">O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...</p>
+                        <span class="preco">R$ 100.00</span> 
+                        <a href="url" class="addCarrinho">Adicionar ao Carrinho</a>
+                    </li>
                 </ul>
+
+            </li>   
+            <li>
+                <ul class="card_product">
+
+                    <li class="img_container">
+                        <img src="./src/mascara.png" alt="">
+                    </li>
+                    <li class="desc_container">
+                        <span class="categoria">Acessórios</span>
+                        <h2 class="produto">Mascara</h2>
+                        <p class="descricao">Esta máscara facial durável é feita de duas camadas de tecido tratado e possui presilhas...</p>
+                        <span class="preco">R$ 100.00</span> 
+                        <a href="url" class="addCarrinho">Adicionar ao Carrinho</a>
+                    </li>
+                </ul>
+
+            </li>   
+            <li>
+                <ul class="card_product">
+
+                    <li class="img_container">
+                        <img src="./src/camiseta.png" alt="">
+                    </li>
+                    <li class="desc_container">
+                        <span class="categoria">Camisetas</span>
+                        <h2 class="produto">Camiseta Preta</h2>
+                        <p class="descricao">Esta t-shirt é imprescindível no seu guarda-roupa, combinando o caimento intemporal de...</p>
+                        <span class="preco">R$ 100.00</span> 
+                        <a href="url" class="addCarrinho">Adicionar ao Carrinho</a>
+                    </li>
+                </ul>
+
+            </li>   
+            <li>
+                <ul class="card_product">
+
+                    <li class="img_container">
+                        <img src="./src/camisetaa_branca.png" alt="">
+                    </li>
+                    <li class="desc_container">
+                        <span class="categoria">Camisetas</span>
+                        <h2 class="produto">Camiseta Branca</h2>
+                        <p class="descricao">Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um mais grosso...</p>
+                        <span class="preco">R$ 100.00</span> 
+                        <a href="url" class="addCarrinho">Adicionar ao Carrinho</a>
+                    </li>
+                </ul>
+
+            </li>   
+            <li>
+                <ul class="card_product">
+
+                    <li class="img_container">
+                        <img src="./src/blusa_cortavento.png" alt="">
+                    </li>
+                    <li class="desc_container">
+                        <span class="categoria">Camisetas</span>
+                        <h2 class="produto">Blusa Corta-vento</h2>
+                        <p class="descricao">Proteja-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de poliést...</p>
+                        <span class="preco">R$ 100.00</span> 
+                        <a href="url" class="addCarrinho">Adicionar ao Carrinho</a>
+                    </li>
+                </ul>
+
+            </li>             
+        </ul>
+        <ul class="card_carrinhoCompras" id="carrinho">
+            <li id="carrinhoTitle">
+                <h2 >Carrinho de Compras</h2>
             </li>
+            <div class="desc_carrinho">
+                <li id="vazio">Carrinho Vazio</li>
+                <li id="addItens">Adicione Itens</li> 
+            </div>                      
+            
         </ul>
 
 
