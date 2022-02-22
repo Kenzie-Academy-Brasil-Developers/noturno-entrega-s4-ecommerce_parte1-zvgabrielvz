@@ -13,11 +13,9 @@ a:link{
     text-decoration-line: underline;
 }
 
-img{
+.img_container img{
     width: 191.81px;
     height: 140px;
-    Top: 5px;
-    Left : 54px;
 }
 
 
@@ -36,27 +34,36 @@ img{
 }
 
 .header_container_menu{
-
-    font-size: 20px;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
     top: 3rem;
-    right: 0px;
-    width: 100px;
+    right: 1rem;
+    width: 300px;
+    height: 30vh;
     display: none;
-
+    background-color: #2E2E2E;
+    border-radius: 10px;
+    color: #F5F5F5;
+    padding: 10px;
+   
 }
 
 
 .header_container_menu li{
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: solid 1px #F5F5F5;
+    width: 280px;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .header_container_menuDot img{
-    width: 50px;
-    height: 35px;
+    width: 40px;
+    height: 30px;
 }
 
 .header_container_menuDot{
@@ -66,7 +73,9 @@ img{
 
 }
 
-
+.menu_button{
+    border-radius: 5px;
+}
 
 p{
     color: #828282;
@@ -79,32 +88,20 @@ p{
 }
 
 .img_container{
-
-    width: 296px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
     height: 154px;
-    left: 0.67%;
-    right: 0.67%;
-    top: -4px;
-    
-    bottom: 60.11%;
     text-align: center;
-    /* grey-0 */
-
-
-    background: #F5F5F5;
-
-    
+    background: #F5F5F5;   
 
 }
 
 .card_product{
-    
-    margin-left: 1rem;
-    width: 296px;
+    width: 300px;
     height: 380px;
-    top: 376px;
     border: solid 2px;
     border-color: #F5F5F5;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
        
@@ -112,7 +109,7 @@ p{
 }
 
 .card_container ul{
-    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .desc_container{
@@ -166,4 +163,38 @@ p{
     
 }
 
+img{
+    width: 100px;
+}
+
+.card_carrinhoCompras{
+   display:none
+}
+
+#divBusca{
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    width: 204px;
+    border-radius: 5px;
+}
+
+#txtBusca{
+    width: 150px;
+    height: 20px;
+    border: 1px solid #F5F5F5;
+    box-sizing: border-box;
+    background: #F5F5F5;
+    border-radius: 5px;
+}
+
+#btnBusca{
+    color: #F5F5F5;
+    border-style: none;
+    background: #6B54DE;
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    
+}
 

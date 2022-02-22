@@ -19,7 +19,8 @@
             <li>Todos</li>
             <li>Acesssórios</li>
             <li>Calçados</li>
-            <li>Camisets</li>   
+            <li>Camisetas</li>   
+            <li>Carrinho de Compras</li>
         </ul>
         <ul class="header_container_menuDot" id="menuDot">
             <li><img src="./src/cardapio.png" alt="" class="menu_button"></li>
@@ -31,7 +32,10 @@
     </header>
 
     <section class="container">
-        
+        <div id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Buscar..."/>
+            <button id="btnBusca">Buscar</button>
+        </div>
         <ul class="card_container">
             <li>
                 <ul class="card_product">
@@ -48,40 +52,38 @@
                     </li>
                 </ul>
 
-                <ul class="card_product">
-
-                    <li class="img_container">
-                        <img src="./src/blusa.png" alt="">
-                    </li>
-                    <li class="desc_container">
-                        <span class="categoria">Camisetas</span>
-                        <h2 class="produto">Blusa Preta</h2>
-                        <p class="descricao">Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante.</p>
-                        <span class="preco">R$ 100.00</span>
-                        <p class="addCarrinho">Adicionar ao Carrinho</p>
-                    </li>
-                </ul>
-
-                <ul class="card_product">
-
-                    <li class="img_container">
-                        <img src="./src/blusa.png" alt="">
-                    </li>
-                    <li class="desc_container">
-                        <span class="categoria">Camisetas</span>
-                        <h2 class="produto">Blusa Preta</h2>
-                        <p class="descricao">Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante.</p>
-                        <span class="preco">R$ 100.00</span>
-                        <p class="addCarrinho">Adicionar ao Carrinho</p>
-                    </li>
-                </ul>
-
-            </li>
-
-           
-           
-            
+            </li>            
         </ul>
+        <ul class="card_carrinhoCompras">
+            <li>
+                <h2>Carrinho de Compras</h2>
+            </li>
+            <li>
+                <ul class="card_produto">
+                    <li></li>
+                    <ul>
+                        <div class="se_vazio">
+                            <li>Carrinho Vazio</li>
+                            <li>Adicione Itens</li>
+                        </div>
+                        <div class="com_itens">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </div>
+                    </ul>
+                    
+                </ul>
+            </li>  
+            <li>
+                <ul class="qtde_total">
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+        </ul>
+
+
 
     </section>
     
